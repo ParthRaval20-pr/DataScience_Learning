@@ -12,6 +12,7 @@ The goal of the project is to demonstrate:
 This project intentionally avoids visualization libraries at this stage to focus on **core data analysis skills**.
 
 ## 📂 Project Structure
+
 Employee-Performance-Analysis/
 │
 ├── data/
