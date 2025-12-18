@@ -70,7 +70,6 @@ employee-attrition-analysis/
 │       ├── salary_vs_experience.png
 │       └── correlation_heatmap.png
 │
-├── requirements.txt
 └── README.md
 
 ---
@@ -157,3 +156,4 @@ It reflects how a data analyst approaches real HR problems: validating assumptio
 ## Author
 Parth Raval  
 (Data Science Learner)
+
