@@ -1,108 +1,159 @@
-# Employee Performance & Salary Analysis (NumPy + Pandas)
+# Employee Compensation, Performance & Attrition Analysis
 
-## 📌 Project Overview
-This project performs an end-to-end analysis of employee salary, performance, and hiring trends using **Python, NumPy, and Pandas**.
+## Project Overview
+This project analyzes employee compensation, performance, and attrition patterns using **NumPy, Pandas, Matplotlib, and Seaborn**.  
+The goal is to simulate a real-world HR analytics task: transform raw employee data into actionable business insights through structured analysis and visualization.
 
-The goal of the project is to demonstrate:
-- Data cleaning and preparation
-- Numerical analysis using NumPy
-- Business-focused analysis using Pandas
-- Clear, actionable insights from structured data
+The project emphasizes:
+- Data correctness before analysis
+- Feature engineering driven by business logic
+- Insight-first visualization (not decorative charts)
 
-This project intentionally avoids visualization libraries at this stage to focus on **core data analysis skills**.
+---
 
-## 📂 Project Structure
+## Business Questions Addressed
+The analysis focuses on the following core questions:
 
-Employee-Performance-Analysis/
+1. Which departments experience the highest employee attrition?
+2. Is attrition related to salary, experience, or performance?
+3. Are junior employees leaving at higher rates than senior employees?
+4. Does compensation align with experience, and where are mismatches occurring?
+5. Is attrition concentrated among low-value or high-value employees?
+
+---
+
+## Dataset
+The dataset is **synthetically generated** to reflect realistic organizational behavior.
+
+### Key Characteristics
+- 600 employee records
+- Logical relationships enforced:
+  - Salary depends on department and experience
+  - Attrition is probabilistic, not random
+  - Experience, age, and tenure are time-consistent
+
+### Columns
+- `EmployeeID`
+- `Age`
+- `Department`
+- `JobRole`
+- `JoinDate`
+- `YearsAtCompany`
+- `TotalExperience`
+- `Salary`
+- `PerformanceRating`
+- `Attrition`
+
+---
+
+employee-attrition-analysis/
 │
 ├── data/
-│ └── employee_data.csv
+│   ├── raw/
+│   │   └── employee_data.csv
+│   └── processed/
+│       ├── cleaned_employee_data.csv
+│       └── featured_employee_data.csv
 │
 ├── analysis/
-│ └── employee_analysis.ipynb
+│   ├── 01_data_generation.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_exploratory_analysis.ipynb
+│   └── 05_visualization.ipynb
 │
-├── Outputs/
-│ ├── top_salary_per_experience.csv
-│ ├── bottom_salary_per_experience.csv
-│ ├── department_summary.csv
-│ ├── avg_salary_by_join_year.csv
-│ └── final_employee_data.csv
+├── outputs/
+│   └── figures/
+│       ├── attrition_by_department.png
+│       ├── attrition_by_experience_level.png
+│       ├── salary_by_attrition.png
+│       ├── salary_vs_experience.png
+│       └── correlation_heatmap.png
 │
+├── requirements.txt
 └── README.md
 
-## 🧾 Dataset Description
-The dataset contains employee-level information such as:
+---
 
-- EmployeeID  
-- Name  
-- Department  
-- Age  
-- Experience (years)  
-- Salary  
-- PerformanceScore  
-- JoinDate  
+## Methodology
 
-The dataset is small by design to emphasize **reasoning and correctness** rather than scale.
+### Step 1: Data Generation
+- Created a realistic employee dataset using NumPy and Pandas
+- Embedded business logic:
+  - Department-based salary bands
+  - Experience-driven compensation
+  - Probabilistic attrition influenced by salary, tenure, and performance
+
+### Step 2: Data Cleaning
+- Validated data types and logical constraints
+- Ensured:
+  - No impossible timelines
+  - No invalid salary values
+  - Datetime correctness for time-based analysis
+
+### Step 3: Feature Engineering
+Key engineered features:
+- `SalaryPerExperience`
+- `ExperienceLevel` (Junior / Mid / Senior)
+- `PerformanceBand`
+- `AttritionFlag`
+- `EarlyTenureExitRisk`
+
+These features convert raw data into analyzable signals.
+
+### Step 4: Exploratory Analysis
+- Attrition rate analysis by department, experience level, and performance
+- Salary comparison between leavers and stayers
+- Identification of early-tenure risk patterns
+
+All insights were derived **before visualization**.
+
+### Step 5: Visualization
+Purpose-driven visualizations created using Matplotlib and Seaborn:
+- Attrition rate by department
+- Attrition by experience level
+- Salary distribution (leavers vs stayers)
+- Salary vs experience (attrition highlighted)
+- Correlation heatmap (used last for confirmation)
 
 ---
 
-## 🛠 Tools & Libraries Used
-- Python  
-- Pandas  
-- NumPy  
-- Jupyter Notebook  
+## Key Insights
+- Marketing and HR exhibit the highest attrition rates.
+- Junior employees leave at significantly higher rates than mid or senior employees.
+- Employees who leave tend to earn lower salaries on average.
+- Salary strongly correlates with experience, while performance shows weaker correlation with attrition.
+- Attrition is concentrated in early tenure, indicating onboarding or expectation gaps.
 
 ---
 
-## 🔍 Analysis Performed
+## Tools & Libraries
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
 
-### 1️⃣ Data Cleaning & Preparation
-- Loaded CSV data
-- Verified column types and structure
-- Converted `JoinDate` to datetime format for time-based analysis
-
-### 2️⃣ NumPy-Based Statistical Analysis
-- Mean salary
-- Median experience
-- Standard deviation of performance scores
-
-### 3️⃣ Salary vs Experience Analysis
-- Created `SalaryPerExperience` metric
-- Identified employees potentially over- or under-compensated relative to experience
-
-### 4️⃣ Department-Level Analysis
-- Average salary per department
-- Average performance score per department
-- Employee count per department
-
-### 5️⃣ Performance-Based Bonus Simulation
-- Implemented bonus rules using NumPy vectorization
-- Calculated bonus and final salary without loops
-
-### 6️⃣ Time-Based Hiring & Salary Trends
-- Extracted joining year from `JoinDate`
-- Analyzed average salary trends over time
+No machine learning libraries were used.  
+The focus is on **analysis and reasoning**, not prediction.
 
 ---
 
-## 📊 Key Business Insights
-- The Finance department has the highest average salary and strongest performance, indicating efficient compensation.
-- The IT department has the largest headcount but lower average performance, suggesting improvement opportunities.
-- Performance-based bonuses significantly increase payroll cost but help reward high performers.
-- Some junior employees earn higher salary relative to experience than senior employees, which may require compensation review.
-- Average salary of newer hires decreases over time, indicating cost-optimized hiring.
-- Recommendation: Review senior compensation balance and align bonuses with long-term performance goals.
+## Limitations
+- Dataset is synthetic and may not capture all real-world factors (e.g., culture, management quality).
+- Attrition relationships are simulated, not causal.
+- Results should be interpreted as analytical signals, not business prescriptions.
 
 ---
 
-## 🚀 Future Improvements
-- Add data visualizations using Matplotlib and Seaborn
-- Expand dataset with more employees
-- Include multi-year performance trends
-- Convert analysis into a reusable Python script
+## Conclusion
+This project demonstrates a full analytics workflow:
+**data → trust → signal → insight → visualization**.
+
+It reflects how a data analyst approaches real HR problems: validating assumptions, engineering meaningful features, and communicating insights clearly without overfitting or overclaiming.
 
 ---
 
-## 👤 Author
-**Parth Raval**  
-Aspiring Data Analyst / Data Scientist
+## Author
+Parth Raval  
+(Data Science Learner)
