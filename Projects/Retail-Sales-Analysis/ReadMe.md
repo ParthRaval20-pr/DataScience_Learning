@@ -59,11 +59,13 @@ Python	Scripting
 NumPy	Numerical analysis
 CSV	Data source
 📂 Project Structure
+```
 Retail-Sales-Analysis/
 │
 ├── mixed_store_sales.csv
 ├── analysis.py
 └── README.md
+```
 
 🚀 Future Enhancements
 
@@ -80,5 +82,6 @@ Data Analyst Intern | Python & NumPy
 (Feel free to link resume or LinkedIn here)
 
 🏁 Final Remark
+
 
 This project demonstrates strong analytical thinking, business-focused insights, and Python/NumPy capability — with clean output ready for stakeholders.
