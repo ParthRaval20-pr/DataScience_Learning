@@ -73,7 +73,7 @@ employee-attrition-analysis/
 ├── scripts/                 # Python scripts for modular tasks
 ├── tests/                   # Unit and integration tests
 ├── README.md                # Project overview and documentation
-
+```
 ---
 
 ## Methodology
@@ -158,5 +158,6 @@ It reflects how a data analyst approaches real HR problems: validating assumptio
 ## Author
 Parth Raval  
 (Data Science Learner)
+
 
 
