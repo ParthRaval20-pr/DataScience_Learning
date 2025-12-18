@@ -50,29 +50,29 @@ The dataset is **synthetically generated** to reflect realistic organizational b
 ```plaintext
 employee-attrition-analysis/
 │
-├── data/                    # Raw and processed datasets
-│   ├── raw/                 # Unmodified data files
+├── data/
+│   ├── raw/
 │   │   └── employee_data.csv
-│   └── processed/           # Cleaned and engineered data
+│   └── processed/
 │       ├── cleaned_employee_data.csv
 │       └── featured_employee_data.csv
 │
-├── notebooks/               # Jupyter notebooks for analysis
+├── analysis/
 │   ├── 01_data_generation.ipynb
 │   ├── 02_data_cleaning.ipynb
 │   ├── 03_feature_engineering.ipynb
 │   ├── 04_exploratory_analysis.ipynb
 │   └── 05_visualization.ipynb
 │
-├── outputs/                 # Output files and visualizations
-│   └── figures/             # Generated graphs
+├── outputs/
+│   └── figures/
 │       ├── attrition_by_department.png
 │       ├── attrition_by_experience_level.png
-│       └── salary_vs_experience.png
+│       ├── salary_by_attrition.png
+│       ├── salary_vs_experience.png
+│       └── correlation_heatmap.png
 │
-├── scripts/                 # Python scripts for modular tasks
-├── tests/                   # Unit and integration tests
-├── README.md                # Project overview and documentation
+└── README.md
 ```
 ---
 
@@ -158,6 +158,7 @@ It reflects how a data analyst approaches real HR problems: validating assumptio
 ## Author
 Parth Raval  
 (Data Science Learner)
+
 
 
 
