@@ -12,7 +12,7 @@ The goal of the project is to demonstrate:
 This project intentionally avoids visualization libraries at this stage to focus on **core data analysis skills**.
 
 ## 📂 Project Structure
-
+```
 Employee-Performance-Analysis/
 │
 ├── data/
@@ -29,7 +29,7 @@ Employee-Performance-Analysis/
 │ └── final_employee_data.csv
 │
 └── README.md
-
+```
 ## 🧾 Dataset Description
 The dataset contains employee-level information such as:
 
@@ -105,4 +105,5 @@ The dataset is small by design to emphasize **reasoning and correctness** rather
 
 ## 👤 Author
 **Parth Raval**  
+
 Aspiring Data Analyst / Data Scientist
