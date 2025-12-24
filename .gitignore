@@ -16,6 +16,15 @@ Thumbs.db
 *.pdf
 # Python
 __pycache__/
+*.pyc<<<<<<< HEAD
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Python
+__pycache__/
 *.pyc
 .env
 venv/
