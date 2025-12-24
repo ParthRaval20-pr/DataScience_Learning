@@ -1,9 +1,0 @@
-EmployeeID,Name,Department,Age,Experience,Salary,PerformanceScore,JoinDate
-101,Amit,IT,26,3,45000,7,12-03-2021
-102,Priya,HR,29,5,52000,8,18-07-2019
-103,Rahul,IT,24,2,40000,6,01-01-2022
-104,Neha,Finance,32,8,75000,9,23-09-2016
-105,Vikram,IT,35,10,90000,8,15-06-2014
-106,Sara,HR,27,4,48000,7,20-11-2020
-107,Arjun,Finance,30,6,68000,8,05-05-2018
-108,Pooja,IT,28,5,55000,7,14-02-2019
