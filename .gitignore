@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documents (DO NOT PUSH)
+*.pdf
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documents (DO NOT PUSH)
+*.pdf
