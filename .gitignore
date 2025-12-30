@@ -1,26 +1,18 @@
-# ===============================
 # Python
-# ===============================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# ===============================
 # Jupyter
-# ===============================
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
-# ===============================
 # Data science
-# ===============================
 data/
 outputs/
 
-# ===============================
 # Allow Job Market Analysis project
-# ===============================
 !Projects/
 !Projects/Job-Market-Analysis/
 !Projects/Job-Market-Analysis/**
