@@ -46,8 +46,9 @@ Each stage produces a new artifact.
 
 ---
 
-```
 ## Project Structure
+
+```
 job-market-analysis/
 │
 ├── data/
@@ -167,4 +168,5 @@ It reflects how job-market analysis is actually performed using imperfect data.
 
 ## Author
 **Parth Raval**  
+
 _Data Science Learner_
