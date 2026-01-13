@@ -6,42 +6,42 @@
     Not toy data.
     A real analytics pipeline focused on decisions.
 
-## 🚀 Project Overview
+ 🚀 Project Overview
 
     This project simulates a real-world e-commerce analytics system where data is:
 
-## 🧪 Generated programmatically (Python, NumPy, Pandas)
+ 🧪 Generated programmatically (Python, NumPy, Pandas)
 
-## 🗄️ Stored & analyzed in MySQL
+ 🗄️ Stored & analyzed in MySQL
 
-## 📈 Visualized for business decision-making
+ 📈 Visualized for business decision-making
 
     The goal is not to describe data —
     the goal is to support decisions.
 
-## 🎯 Business Questions Answered
+ 🎯 Business Questions Answered
 
     This project answers actionable questions, not vanity metrics:
 
-## 🧾 Which product categories generate the most revenue?
+ 🧾 Which product categories generate the most revenue?
 
-## 🌆 Which cities have high vs low Average Order Value (AOV)?
+ 🌆 Which cities have high vs low Average Order Value (AOV)?
 
-## 👥 How concentrated is customer revenue?
+ 👥 How concentrated is customer revenue?
 
-## 📉 Do top customers follow the 80/20 Pareto rule?
+ 📉 Do top customers follow the 80/20 Pareto rule?
 
-## 💳 Where is revenue leaking due to payment failures?
+ 💳 Where is revenue leaking due to payment failures?
 
-## 🧠 Tech Stack
+ 🧠 Tech Stack
     Layer	Tools
-# 🗄️ Database	MySQL
-# 📜 SQL	Joins, Aggregations, Subqueries, Business Metrics
-# 🐍 Python	Pandas, NumPy
-# 📊 Visualization	Matplotlib, Seaborn
-# ⚙️ Data Engineering	Synthetic data generation
+    🗄️ Database	MySQL
+    📜 SQL	Joins, Aggregations, Subqueries, Business Metrics
+ 🐍 Python	Pandas, NumPy
+ 📊 Visualization	Matplotlib, Seaborn
+ ⚙️ Data Engineering	Synthetic data generation
 
-🗂️ Project Structure
+## 🗂️ Project Structure
 ```
 ecommerce-decision-analytics/
 │
@@ -88,29 +88,29 @@ ecommerce-decision-analytics/
 └── README.md
 ```
 
-# 🧪 Data Generation (Python)
+🧪 Data Generation (Python)
 
-# 👤 1000+ users with realistic names & cities
+ 👤 1000+ users with realistic names & cities
 
-# 📦 Products mapped to categories
+ 📦 Products mapped to categories
 
-# 🛍️ Orders with repeat-customer behavior
+ 🛍️ Orders with repeat-customer behavior
 
-# 💸 Payments including failures
+ 💸 Payments including failures
 
-# 📉 Revenue skewed intentionally (Pareto-like)
+ 📉 Revenue skewed intentionally (Pareto-like)
 
-# 👉 This replaces static Kaggle datasets with engineered realism.
+ 👉 This replaces static Kaggle datasets with engineered realism.
 
-# 🗄️ Database Design (MySQL)
+ 🗄️ Database Design (MySQL)
 
-# ✅ Normalized schema
+ ✅ Normalized schema
 
-# 🔑 Primary & Foreign Keys
+ 🔑 Primary & Foreign Keys
 
-# ⚡ Indexes for analytics
+ ⚡ Indexes for analytics
 
-# 📥 Bulk CSV loading
+ 📥 Bulk CSV loading
 
     Tables
 
@@ -126,21 +126,21 @@ ecommerce-decision-analytics/
 
     payments
 
-# 📜 SQL Analytics Performed
+ 📜 SQL Analytics Performed
 
     All core metrics were computed in SQL first:
 
-# 📊 Revenue by category
+ 📊 Revenue by category
 
-# 🔁 Repeat customer analysis
+ 🔁 Repeat customer analysis
 
-# 🌆 City-wise AOV
+ 🌆 City-wise AOV
 
-# 💰 Customer Lifetime Value (LTV)
+ 💰 Customer Lifetime Value (LTV)
 
-# 📉 Pareto (80/20) analysis
+ 📉 Pareto (80/20) analysis
 
-# 💳 Payment failure impact
+ 💳 Payment failure impact
 
     Queries are organized by difficulty & depth:
 
@@ -148,37 +148,37 @@ ecommerce-decision-analytics/
     sql/intermediate
     sql/advanced
 
-# 📈 Visualization & Decision Layer
+ 📈 Visualization & Decision Layer
 
     SQL insights are reproduced and visualized in Python to communicate decisions clearly.
 
-# 📌 Saved Visual Outputs
+ 📌 Saved Visual Outputs
 
-# 🧾 Revenue by Category
+ 🧾 Revenue by Category
 
-# 🌆 City Average Order Value
+ 🌆 City Average Order Value
 
-# 👥 Customer LTV Distribution
+ 👥 Customer LTV Distribution
 
-# 📉 Pareto Curve (80/20)
+ 📉 Pareto Curve (80/20)
 
-# 💳 Payment Failure Revenue Loss
+ 💳 Payment Failure Revenue Loss
 
-# All visuals are saved in:
+ All visuals are saved in:
 
     outputs/figures/
 
-# 🔍 Key Insights
+ 🔍 Key Insights
 
-# 🔥 Revenue is highly concentrated
+ 🔥 Revenue is highly concentrated
 
-# 👥 ~20% of customers generate ~80% of revenue
+ 👥 ~20% of customers generate ~80% of revenue
 
-# 🌆 High order volume ≠ high value
+ 🌆 High order volume ≠ high value
 
-# 💳 Payment failures cause direct revenue loss
+ 💳 Payment failures cause direct revenue loss
 
-# 🧠 Why This Project Stands Out
+ 🧠 Why This Project Stands Out
 
     This project demonstrates:
 
@@ -191,10 +191,10 @@ ecommerce-decision-analytics/
         ✅ Clean separation of concerns
         (generation → storage → analysis → communication)
 
-## 📌 This is not a Kaggle EDA.
+ 📌 This is not a Kaggle EDA.
     It mirrors real analytics workflows.
 
-# ⏭️ Next Steps
+ ⏭️ Next Steps
 
     📐 Statistics & Mathematics
 
@@ -202,8 +202,9 @@ ecommerce-decision-analytics/
 
     📊 Advanced analytics use cases
 
-## 👤 Author
+ 👤 Author
 
     Parth Raval
     Aspiring Data Analyst / Data Science learner
+
     Focused on logic, correctness, and real-world analytics
